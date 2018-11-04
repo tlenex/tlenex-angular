@@ -1,0 +1,39 @@
+@import "../../styles/palette";
+
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.prefix {
+  text-transform: uppercase;
+  margin-right: 1px;
+  font-weight: bold;
+  &:before {
+    content: 'TLEN';
+    font-weight: bold;
+    display: inline-block;
+    color: map_get($md-tlenex-palette, A100);
+    //text-shadow: 0 0 2px blue;
+    margin-right: 1px;
+  }
+}
+
+.logo,
+.logo-description {
+  font-family: 'Monda', sans-serif;
+}
+
