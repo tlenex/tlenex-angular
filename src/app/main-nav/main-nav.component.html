@@ -5,15 +5,23 @@
                [opened]="!(isHandset$ | async)">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#"><b class="prefix">Ex</b>hibicja</a>
-      <a mat-list-item href="#"><b class="prefix">Ex</b>spertyza</a>
-      <a mat-list-item href="#"><b class="prefix">Ex</b>ploracje</a>
-      <a mat-list-item href="#"><b class="prefix">Ex</b>pert</a>
+      <a mat-list-item routerLink="/ekspozycja"><b class="prefix">Ex</b>pozycja</a>
+      <a mat-list-item routerLink="/ekspertyza"><b class="prefix">Ex</b>spertyza</a>
+      <a mat-list-item routerLink="/ekploracje"><b class="prefix">Ex</b>ploracje</a>
+      <a mat-list-item routerLink="/ekscytujace-gry"><b class="prefix">Ex</b>cytujące gry</a>
+      <a mat-list-item routerLink="/ekspert"><b class="prefix">Ex</b>pert</a>
     </mat-nav-list>
     <mat-toolbar>Partnerzy</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="https://helion.pl">Helion.pl</a>
-      <a mat-list-item href="https://forumweb.pl">forumweb.pl</a>
+      <a mat-list-item href="http://ozonex.pl" rel="nofollow" target="_blank">
+          ozonex.pl
+      </a>
+      <a mat-list-item href="https://helion.pl" rel="nofollow" target="_blank">
+          helion.pl
+      </a>
+      <a mat-list-item href="https://forumweb.pl" rel="nofollow" target="_blank">
+          forumweb.pl
+      </a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -30,6 +38,6 @@
       <small class="logo-description">Blog &amp; personal portfolio</small>
     </mat-toolbar>
     <!-- Add Content Here -->
-    <app-dashboard></app-dashboard>
+    <ng-content></ng-content>
   </mat-sidenav-content>
 </mat-sidenav-container>
